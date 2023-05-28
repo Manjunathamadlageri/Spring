@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="xyz" class="com.maven2.Company">  
+    <property name="companyid" value="101">
+    </property>
+    <property name="companyname" value="tom">
+    </property>
+    <property name="location" value="mysore">
+    </property>
+    </bean>
+    <!-- p-schema -->
+    <bean name="abc" class="com.maven2.Company" p:companyid="345" p:companyname="adobe" p:location="bangalore">
+    </bean>
+    </beans>		
